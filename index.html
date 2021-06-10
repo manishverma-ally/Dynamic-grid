@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOPLANE</title>
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css" />
+    
+    <!-- font awesome css -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <!-- font Montserrat -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav id="nav-bar">
+      <!-- site logo -->
+      <div class="logo">
+        <a href="/"><h4><span>SHOP</span>LANE</h4></a>
+      </div>
+
+      <!-- navigation tabs -->
+      <ul class="nav-tabs">
+        <li><a href="/">Home</a></li>
+        <li><a href="#clothing">Clothings</a></li>
+        <li><a href="#accessories">Accessories</a></li>
+      </ul>
+
+      <!-- navigation bar search, user and cart icons -->
+      <div class="icons">
+        <i class="fa fa-search"></i>
+        <div class="cart">
+          <a href="/"><i class="fa fa-shopping-cart"><span>0</span></i></a>
+        </div>
+        <i class="fa fa-user-circle-o"></i>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- clothing cards container -->
+    <div id="clothing">
+      <h2 class="section-header">Clothing for Men and Women</h2>
+      <div class="card-conatiner" id="clothing-container"></div>
+    </div>
+
+    <!-- accessories cards container -->
+    <div id="accessories">
+      <h2 class="section-header">Accessories for Men and Women</h2>
+      <div class="card-conatiner" id="accessories-container"></div>
+    </div>
+
+    <!-- custom javascript files -->
+    <script src="./productData.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

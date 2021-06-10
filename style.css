@@ -1,0 +1,218 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  padding-top: 10vh;
+}
+
+/* navigation bar styles */
+#nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 2px 4px 2px rgba(17, 16, 16, 0.5);
+  padding: 15px 0;
+  min-height: 8vh;
+  margin-top: -10vh !important;
+  position: fixed;
+  z-index: 50;
+  background-color: #fff;
+}
+
+/* site logo styles */
+.logo a {
+  text-decoration: none;
+  color: #000;
+}
+.logo a h4 {
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.logo a h4 span {
+  color: #009688;
+  letter-spacing: 1px;
+  font-weight: 1000;
+}
+
+/* navigation-bar tabs styles */
+.nav-tabs {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 30%;
+  padding-top: 8px;
+}
+.nav-tabs li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: rgb(27, 25, 25);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+}
+.nav-tabs li a:hover {
+  color: #009688;
+}
+
+/* ICONS STYLE */
+.icons {
+  display: flex;
+  color: rgb(27, 25, 25);
+}
+.icons i {
+  padding-top: 8px;
+  font-size: 22px;
+  cursor: pointer;
+  margin-right: 50px;
+}
+.icons .cart {
+  position: relative;
+}
+.icons .cart a {
+  color: rgb(27, 25, 25);
+}
+.icons .cart a span {
+  color: #fff;
+  background-color: #009688;
+  border-radius: 50%;
+  font-size: 14px;
+  padding: 5px 8px;
+  position: absolute;
+  top: 0;
+}
+
+/* collapsed menu icon */
+.burger {
+  display: none;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(27, 25, 25);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* section header styles */
+.section-header {
+  margin-top: 70px;
+  margin-left: 70px;
+  color: rgb(27, 25, 25);
+}
+
+/* card container styles*/
+.card-conatiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 4%;
+}
+
+/* product card styles */
+.card {
+  width: 15%;
+  min-width: 200px;
+  height: auto;
+  margin: 30px 10px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* hovering effect on product card */
+.card:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.card img {
+  width: 100%;
+}
+
+/* product card details */
+.card .details {
+  padding-left: 10px;
+  margin: 10px auto;
+}
+
+.card .details h3 {
+  text-align: left;
+  font-size: 16px;
+  color: rgb(27, 25, 25);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.card .details h4 {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: rgb(110, 110, 110);
+}
+
+.card .details h5 {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 15px;
+  color: #009688;
+  letter-spacing: 2px;
+}
+
+/* media query for nav-bar for screen having width <= 1024px */
+@media screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-tabs {
+    display: none;
+  }
+  .nav-tabs li {
+    opacity: 1;
+    margin-top: 100px;
+  }
+  .nav-tabs li a {
+    color: rgb(27, 25, 25);
+  }
+  .nav-tabs li a:hover {
+    color: #fff;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+/* media query for nav-bar for screen having width <= 426px */
+@media screen and (max-width: 426px) {
+  body {
+    overflow-x: hidden;
+  }
+  .logo a h4 {
+    font-size: 24px;
+  }
+  .icons i {
+    padding-top: 6px;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .icons .cart {
+    margin-right: 15px;
+  }
+  .burger {
+    padding-top: 2px;
+  }
+}
